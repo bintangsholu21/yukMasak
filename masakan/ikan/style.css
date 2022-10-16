@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* header */
+.navbar img{
+    float: left;
+    height: 13%;
+    width: 13%;
+    margin: 5px 0 0 190px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B33030;
+}
+
+.navbar li{
+    margin-top: 5px;
+    float: left;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+
+.container-navbar{
+    float: right;
+    margin-right: 170px;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.home a, a.dropbtn, li.tipstrik a{
+    color: #FFFBE7;
+}
+
+
+li.home a:hover, li.tipstrik a:hover, .dropdown:hover .dropbtn {
+    transition: transform .2s;
+    transform: scale(1.3);
+    color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ikan */
+.plot h1{
+    margin-left: 85px;
+    font-size: 14pt;
+    font-weight: 600;
+}
+.plot a{
+    text-decoration: none;
+    color: orangered;
+}
+.plot a:hover{
+    color: purple;
+}
+#ikan{
+    width: 1000px;
+    box-shadow: 2px 2px 10px lightgray;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 35px 0;
+}
+
+.ikan-judul{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+.ikan-container table{
+    margin-left: 75px;
+}
+
+.ikan-container tr td{
+    padding: 20px;
+}
+.ikan-container a img{
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ikan-container h2 a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14pt;
+    color: black;
+    text-align: left;
+}
+
+.menu-ikan:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+.icon-ikan{
+    height: 5%;
+    width: 5%;
+    margin: 0 10px;
+    padding: 2px;
+    position: relative;
+    vertical-align: middle;
+}
+.menu-ikan h2, h3{
+    margin: 8px 0;
+    font-size: 10pt;
+    font-weight: 500;
+}
+.menu-ikan h3{
+    padding-top: 5px;
+    margin-top: 2px;
+}
+
+/* footer */
+#footer{
+    height: 150px;
+    background-color: #B33030;
+}
+.footer-container{
+    text-align: center;
+}
+.footer-container a img{
+    height: 4%;
+    width: 4%;
+    margin: 20px 0;
+    padding: 0 30px;
+    color: white;
+}
+
+.footer-container h1{
+    padding-bottom: 20px;
+    font-size: 13pt;
+    font-weight: 500;
+    color: white;
+}
