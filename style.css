@@ -1,5 +1,367 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@media screen and (min-width: 860px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  /* header */
+  .navbar img{
+    float: left;
+    height: 13%;
+    width: 13%;
+    margin: 5px 0 0 190px;
+  }
+
+  .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B33030;wdjlXKLIDJDIJIJD
+  }
+
+  .navbar li{
+    margin-top: 5px;
+    float: left;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 13pt;
+  }
+
+  .container-navbar{
+    float: right;
+    margin-right: 170px;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li.home a, a.dropbtn, li.tipstrik a{
+    color: #FFFBE7;
+  }
+
+
+  li.home a:hover, li.tipstrik a:hover, .dropdown:hover .dropbtn {
+    transition: transform .2s;
+    transform: scale(1.3);
+    color: white;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* hero */
+  .hero-judul{
+    text-align: center;
+    font-family: Courgette;
+    font-weight: 900;
+    font-size: 22pt;
+    margin-top: 50px;
+    color: red;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+  }
+  .mySlides img{
+    border-radius: 20px;
+    filter: brightness(80%);
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color : whitesmoke;
+    font-size: 25pt;
+    font-weight: 800;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* menu */
+  .menu-judul{
+    padding: 0 20px;
+    margin: 100px 85px 0 140px;
+    color: red;
+    font-weight: 700;
+    font-size: 16pt;
+  }
+
+  .menu-container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 100%;
+  }
+
+  .menu-list{
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .menu-list img{
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .menu-list:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+
+  }
+  .menu-list h2 a{
+    font-size: 15pt;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+  }
+  h2{
+    margin-top: 10px;
+  }
+
+
+  /* rester */
+  #resep-terkini{
+    width: 1100px;
+    border-radius: 25px;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .rester-judul{
+    padding-top: 15px;
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16pt;
+  }
+
+  .rester-container table{
+    margin-left: 75px;
+  }
+
+  .rester-container tr td{
+    padding: 20px;
+  }
+  .rester-container a img{
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .rester-container h2 a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14pt;
+    color: black;
+    text-align: left;
+  }
+
+  .menu-rester:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+  }
+  .icon-rester{
+    height: 5%;
+    width: 5%;
+    margin: 0 10px;
+    padding: 2px;
+    position: relative;
+    vertical-align: middle;
+  }
+  .menu-rester h2, h3{
+    margin: 8px 0;
+    font-size: 10pt;
+    font-weight: 500;
+  }
+  .menu-rester h3{
+    padding-top: 5px;
+    margin-top: 2px;
+  }
+
+  /* tips trik */
+  .tipstrik-judul{
+    padding-top: 15px;
+    color: red;
+    font-weight: 700;
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  #tipstrik{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .tipstrik-container{
+    width: 1100px;
+    border-radius: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .tipstrik-container td{
+    width: 950px;
+    padding: 0;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+  }
+
+  .tipstrik-container table{
+    margin-left: 65px;
+  }
+
+  .tips a img{
+    float: left;
+    height: 20%;
+    width: 20%;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .tips h1 a{
+    text-decoration: none;
+    position: relative;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 14pt;
+    display: flex;
+    color: black;
+    font-weight: 600;
+  }
+
+
+  .btn-tipstrik{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #125B50;
+    border: 0;
+    margin: 0;
+  }
+
+  a.btn-tipstrik{
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  .btn-tipstrik:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+  }
+
+  /* footer */
+  #footer{
+    height: 150px;
+    background-color: #B33030;
+  }
+  .footer-container{
+    text-align: center;
+  }
+  .footer-container a img{
+    height: 4%;
+    width: 4%;
+    margin: 20px 0;
+    padding: 0 30px;
+    color: white;
+  }
+
+  .footer-container h1{
+    padding-bottom: 20px;
+    font-size: 13pt;
+    font-weight: 500;
+    color: white;
+  }
+
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -185,11 +547,13 @@ li.dropdown {
   width: 80%;
   border-radius: 15px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+
 }
 
 .menu-list:hover{
   transition: transform .2s;
   transform: scale(1.1);
+
 }
 .menu-list h2 a{
   font-size: 15pt;
@@ -355,4 +719,84 @@ a.btn-tipstrik{
   font-size: 13pt;
   font-weight: 500;
   color: white;
+}
+
+@media screen min-width: 500px and max-width: 799px {
+  /* header */
+  .navbar img{
+    float: left;
+    height: 13%;
+    width: 13%;
+    margin: 5px 0 0 190px;
+  }
+
+  .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B33030;
+  }
+
+  .navbar li{
+    margin-top: 5px;
+    float: left;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 13pt;
+  }
+
+  .container-navbar{
+    float: right;
+    margin-right: 170px;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li.home a, a.dropbtn, li.tipstrik a{
+    color: #FFFBE7;
+  }
+
+
+  li.home a:hover, li.tipstrik a:hover, .dropdown:hover .dropbtn {
+    transition: transform .2s;
+    transform: scale(1.3);
+    color: white;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
